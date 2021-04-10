@@ -1,13 +1,189 @@
-body {
+*{
+  padding: 0;
+  box-sizing: border-box;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.products{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px;
+  
+}
+.App{
+  max-width: 1230px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 2px 6px #555;
+  padding: 0 15px;
+}
+.products .card{
+  max-width: 300px;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  cursor: pointer;
+  margin-top: 50px;
+  
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  max-height: 340px;
+  display: block;
+  object-fit: cover;
+}
+.card .box{
+  margin: 15px 0;
+  padding: 2px;
+}
+.card .box p{
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.card .box button{
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.details{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.details .img-container{
+  max-width: 400px;
+  width: 100%;
+  margin: 20px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: scale-down;
+}
+.box-details{
+  max-width: 500px;
+  width: 100%;
+  margin: 30px;
+  justify-content: center;
+
+
+}
+.details .box-details h2{
+  text-transform: uppercase;
+  color: darkblue;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+.details .box-details button{
+  border: 1px solid 555;
+  outline: none;
+  background: #333;
+  color: white;
+}
+@media (max-width: 500px){
+  .details{
+    padding: 0;
+  }
+  .box-details .img-container{
+    height: 350px;
+  }
+  
+}
+.base-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+}
+.base-container .header{
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.base-container .content{
+  display: flex;
+  flex-direction: column;
+  border: thin black solid;
+  width: 402px;
+  margin-left: 400px;
+}
+.form{
+  padding: 5px;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+}
+.base-container label{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.base-container input{
+  margin-top: 1px;
+  min-width: 18em;
+  height: 37px;
+  padding: 0px 10px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 31px;
+  transition: all 250ms ease-in-out;
+}
+.base-container input :focus{
+  outline: none;
+  box-shadow: 0px 0px 12px 0.8px #0e81ce96;
+}
+.base-container .footerr{
+margin-top: 2em;
+}
+.base-container .btn{
+  font-size: 21px;
+  padding: 5px 20px;
+  border: 0;
+  background-color: green;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+.products .head{
+  padding-bottom: 10px;
+  max-height: fit-content;
+  max-block-size: 2px;
+}
+
+
